@@ -1,0 +1,6 @@
+.here {
+  display: flex;
+  background-color: #fff;
+  border: solid 2px black;
+  border-radius: 100%;
+}

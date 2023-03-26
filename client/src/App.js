@@ -1,5 +1,7 @@
 import React from 'react';
-import Map from 'react-map-gl';
+import Map, { Marker } from 'react-map-gl';
+
+import './App.css';
 
 const App = () => {
   return (
@@ -12,7 +14,11 @@ const App = () => {
       style={{width: "50vw", height: "50vh"}}
       mapboxAccessToken={process.env.REACT_APP_MAPBOX}
       mapStyle="mapbox://styles/mapbox/streets-v9"
-    />
+    >
+      <Marker longitude={-122.7784} latitude={45.5352} anchor="bottom" >
+      <div className='here'>You are here</div>
+    </Marker>
+    </Map>
   );
 };
 
